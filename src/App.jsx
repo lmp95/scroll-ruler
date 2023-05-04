@@ -1,11 +1,12 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
 import './App.css';
+import Canvas from './components/ScrollRuler';
 
 function App() {
-    const [count, setCount] = useState(0);
-
-    return <div className='App'></div>;
+    return (
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100vw', height: '100vh' }}>
+            <Canvas width='700' height='500' />
+        </div>
+    );
 }
 
 export default App;
